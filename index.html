@@ -35,7 +35,7 @@ void mouseDragged(){
   
   float hue = frameCount*20%360;
   float weight = dist(mouseX, mouseY, x_bef, y_bef)*4;
-  fill(hue/2+120, 30+random(30), 30+random(70));
+  fill(hue/4+120, 30+random(30), 70+random(30), random(128)+64);
   ellipse(mouseX, mouseY, weight, weight);
   x_bef = mouseX;
   y_bef = mouseY;
